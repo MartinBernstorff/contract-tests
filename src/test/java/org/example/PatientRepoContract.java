@@ -25,7 +25,6 @@ public class PatientRepoContract {
                 });
             }),
 
-            // Test: create with valid patient should return new instance
             dynamicTest("create with valid patient should return new instance", () -> {
                 Patient patient = new Patient(0);
                 Patient savedPatient = patientRepo.get().create(patient);
